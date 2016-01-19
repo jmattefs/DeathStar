@@ -20,7 +20,7 @@ namespace DeathStar
         OverBridge overBridge;
         SuperLaser superLaser;
         MagneticShielding magneticShielding;
-        HyperDrive hyperDrive;
+        public HyperDrive hyperDrive;
         PowerCell powerCell;
         CentralComputerCore centralComputerCore;
         HeatExchanger heatExchanger;
@@ -29,5 +29,9 @@ namespace DeathStar
         FuelCollector fuelCollector;
         ExteriorQuadaniumsteelouterhull exteriorQuadaniumSteelOuterHull;
         
+        public DeathStar()
+        {
+            hyperDrive = new HyperDrive("Hoth", 10, 10, true);
+        }
     }
 }
