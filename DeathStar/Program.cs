@@ -20,6 +20,7 @@ namespace DeathStar
             deathStar.ThermalExhaustPort.ClosePort();
             deathStar.ThermalExhaustPort.OpenPort();
             deathStar.superLaser.activate();
+            deathStar.superLaser.refresh();
         }
     }
 }

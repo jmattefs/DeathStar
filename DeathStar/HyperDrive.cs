@@ -23,7 +23,7 @@ namespace TopSecretPlans
         public void activate()
         {
             UseHyperDrive();
-            IsHyperDriveExecuted();
+           
         }
 
         public bool IsHyperDriveExecuted()
@@ -40,7 +40,7 @@ namespace TopSecretPlans
 
         public void refresh()
         {
-            throw new NotImplementedException();
+            IsHyperDriveExecuted();
         }
 
         public void UseHyperDrive()

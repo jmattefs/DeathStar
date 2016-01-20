@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    public class Thermalexhaustport : Exhaust, IChangeTemperature
+    public class Thermalexhaustport : Exhaust, IChangeTemperature, IActivate
     {
         public int Temperature;
         
@@ -36,6 +36,16 @@ namespace TopSecretPlans
         {
             isOpen = true;
             Console.WriteLine("You are now vulnerable to jedi-fired projectiles.");
+        }
+
+        public void activate()
+        {
+            ExpendExhaust();
+        }
+
+        public void refresh()
+        {
+            throw new NotImplementedException();
         }
     }
 }
