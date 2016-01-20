@@ -27,13 +27,13 @@ namespace TopSecretPlans
 
         public void refresh()
         {
-            
+            HeatUp();
         }
 
         void IActivate.activate()
         {
             CoolDown();
-            HeatUp(); ;
+            
         }
 
         

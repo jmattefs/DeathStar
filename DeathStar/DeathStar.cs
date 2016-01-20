@@ -23,7 +23,7 @@ namespace DeathStar
         public HyperDrive hyperDrive;
         PowerCell powerCell;
         CentralComputerCore centralComputerCore;
-        HeatExchanger heatExchanger;
+        public HeatExchanger heatExchanger;
         CoolingSystem coolingSystem;
         public Refinery refinery;
         FuelCollector fuelCollector;

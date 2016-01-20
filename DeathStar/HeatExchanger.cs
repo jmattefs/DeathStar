@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    public class HeatExchanger : IChangeTemperature
+    public class HeatExchanger : IChangeTemperature, IActivate
     {
         public int Temperature;
 
@@ -30,6 +30,18 @@ namespace TopSecretPlans
         public void HeatUp()
         {
             Temperature++; 
+        }
+
+        public void activate()
+        {
+            CoolDown();
+            HeatUp();
+        }
+
+        public void refresh()
+        {
+            HeatUp();
+            CoolDown();
         }
     }
 }

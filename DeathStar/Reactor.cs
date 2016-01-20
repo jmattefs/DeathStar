@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    public class Reactor
+    public class Reactor : IActivate
     {
         public int PowerRate
 		{
@@ -33,6 +33,16 @@ namespace TopSecretPlans
                 PowerRate++;
             }
             return PowerRate;
+        }
+
+        public void activate()
+        {
+            GeneratePower();
+        }
+
+        public void refresh()
+        {
+            Console.WriteLine("Power rate is: " + PowerRate);
         }
     }
 }

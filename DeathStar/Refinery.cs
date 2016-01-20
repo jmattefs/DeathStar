@@ -22,12 +22,12 @@ namespace TopSecretPlans
 
         public void activate()
         {
-           
+            RefineFuel(100, 50);
         }
 
         public void refresh()
         {
-            throw new NotImplementedException();
+            Exhaust(50);
         }
     }
 }
