@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    class HyperDrive
+    public class HyperDrive
     {
 		public string destination;
         public int fuelCellLevel;

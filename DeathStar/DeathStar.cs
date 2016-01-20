@@ -12,13 +12,13 @@ namespace DeathStar
         Mainexhaustport mainExhaustPort;
         Thermalexhaustport ThermalExhaustPort;
         TractorBeam tractorBeam;
-        TractorBeamGenerator tractorBeamGenerator;
-        EmergencyRadiationDischarge emergencyRadiationDischarge;
+        ///TractorBeamGenerator tractorBeamGenerator;
+        ///EmergencyRadiationDischarge emergencyRadiationDischarge;
         MainPowerGenerator mainPowerGenerator;
         HyperMatterReactor hyperMatterReactor;
         IonDriveReactor ionDriveReactor;
         OverBridge overBridge;
-        SuperLaser superLaser;
+        public SuperLaser superLaser;
         MagneticShielding magneticShielding;
         public HyperDrive hyperDrive;
         PowerCell powerCell;
@@ -32,6 +32,8 @@ namespace DeathStar
         public DeathStar()
         {
             hyperDrive = new HyperDrive("Hoth", 10, 10, true);
+            superLaser = new SuperLaser(100, 100, 100);
+
         }
     }
 }

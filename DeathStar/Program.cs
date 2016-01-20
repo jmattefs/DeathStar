@@ -12,7 +12,9 @@ namespace DeathStar
         static void Main(string[] args)
         {
             DeathStar deathStar = new DeathStar();
-            deathStar.hyperDrive.UseHyperDrive
+            deathStar.hyperDrive.UseHyperDrive();
+            deathStar.superLaser.FireLaser();
+            deathStar.superLaser.Recharge();
         }
     }
 }
