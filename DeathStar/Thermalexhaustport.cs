@@ -32,5 +32,10 @@ namespace TopSecretPlans
             Console.WriteLine("You are now protected by lasers shooting into this thermal exhaust port and blowing up your Death Star");
             
         }
+        public void OpenPort()
+        {
+            isOpen = true;
+            Console.WriteLine("You are now vulnerable to jedi-fired projectiles.");
+        }
     }
 }

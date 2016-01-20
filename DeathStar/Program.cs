@@ -15,7 +15,10 @@ namespace DeathStar
             deathStar.hyperDrive.UseHyperDrive();
             deathStar.superLaser.FireLaser();
             deathStar.superLaser.Recharge();
+            deathStar.superLaser.TripleShot();
+            deathStar.superLaser.Recharge();
             deathStar.ThermalExhaustPort.ClosePort();
+            deathStar.ThermalExhaustPort.OpenPort();
         }
     }
 }
