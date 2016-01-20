@@ -22,7 +22,7 @@ namespace TopSecretPlans
             this.Length = length;
             this.numberOfFans = numberOfFans;
         }
-        public bool isOpen;
+        public bool isOpen = true;
 
         public virtual Radiation ExpendExhaust()
         {

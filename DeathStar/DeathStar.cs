@@ -10,7 +10,7 @@ namespace DeathStar
     public class DeathStar
     {
         Mainexhaustport mainExhaustPort;
-        Thermalexhaustport ThermalExhaustPort;
+        public Thermalexhaustport ThermalExhaustPort;
         TractorBeam tractorBeam;
         ///TractorBeamGenerator tractorBeamGenerator;
         ///EmergencyRadiationDischarge emergencyRadiationDischarge;
@@ -33,6 +33,7 @@ namespace DeathStar
         {
             hyperDrive = new HyperDrive("Hoth", 100, 100, true);
             superLaser = new SuperLaser(100, 100, 100);
+            ThermalExhaustPort = new Thermalexhaustport();
 
         }
     }

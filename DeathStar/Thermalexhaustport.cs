@@ -9,6 +9,7 @@ namespace TopSecretPlans
     public class Thermalexhaustport : Exhaust, IChangeTemperature
     {
         public int Temperature;
+        
 
         public Radiation ExpendExhaust(ReactorCore core)
         {
@@ -24,6 +25,12 @@ namespace TopSecretPlans
         public void CoolDown()
         {
              this.Temperature--;
+        }
+        public void ClosePort()
+        {
+            isOpen = false;
+            Console.WriteLine("You are now protected by lasers shooting into this thermal exhaust port and blowing up your Death Star");
+            
         }
     }
 }

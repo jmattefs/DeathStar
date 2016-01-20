@@ -37,7 +37,7 @@ namespace TopSecretPlans
                 this.hyperDriveExecution = true;
                 this.fuelCellLevel--;
                 this.gravityLevel = 0;
-                Console.WriteLine("You have used the hyperdrive, you are now in" + destination);
+                Console.WriteLine("You have used the hyperdrive, you are now in " + destination);
             }
            else
             {
