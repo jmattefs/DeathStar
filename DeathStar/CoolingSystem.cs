@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    public class CoolingSystem : IChangeTemperature
+    public class CoolingSystem : IChangeTemperature , IActivate
     {
         int OverAllTemperature;
         public void Cool(IChangeTemperature part)
@@ -24,5 +24,18 @@ namespace TopSecretPlans
         {
             OverAllTemperature++;
         }
+
+        public void refresh()
+        {
+            
+        }
+
+        void IActivate.activate()
+        {
+            CoolDown();
+            HeatUp(); ;
+        }
+
+        
     }
 }

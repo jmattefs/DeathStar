@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    public class SuperLaser
+    public class SuperLaser : IActivate
     {
         int laserPowerLevel;
         int laserDamage;
@@ -45,6 +45,23 @@ namespace TopSecretPlans
                 Recharge();
             }
 
+        }
+
+        public void activate()
+        {
+            Console.WriteLine("Which laser would you like to fire.. single or triple?");
+            string line = Console.ReadLine();
+            if (line == "single"){
+                FireLaser();
+            } else if (line == "triple")
+            {
+                TripleShot();
+            }
+        }
+
+        public void refresh()
+        {
+            Recharge();
         }
     }
 }

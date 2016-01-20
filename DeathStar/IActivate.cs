@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DeathStar
+namespace TopSecretPlans
 {
-    interface IActivate
+    public interface IActivate
     {
         void activate();
         void refresh();

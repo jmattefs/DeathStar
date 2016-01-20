@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    public class HyperDrive
+    public class HyperDrive : IActivate
     {
 		public string destination;
         public int fuelCellLevel;
@@ -19,6 +19,13 @@ namespace TopSecretPlans
             gravityLevel = GravityLevel;
             hyperDriveExecution = HyperDriveExecution;
         }
+
+        public void activate()
+        {
+            UseHyperDrive();
+            IsHyperDriveExecuted();
+        }
+
         public bool IsHyperDriveExecuted()
         {
             if(hyperDriveExecution==true)
@@ -30,6 +37,12 @@ namespace TopSecretPlans
                 return false;
             }
         }
+
+        public void refresh()
+        {
+            throw new NotImplementedException();
+        }
+
         public void UseHyperDrive()
         {
             if(fuelCellLevel>0)
