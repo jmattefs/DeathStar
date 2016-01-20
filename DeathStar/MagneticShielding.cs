@@ -49,7 +49,7 @@ namespace TopSecretPlans
             }
             else
             {
-                Console.WriteLine("you stile have a shield");
+                Console.WriteLine("you still have a shield");
             }
 
               

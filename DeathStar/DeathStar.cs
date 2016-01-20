@@ -25,7 +25,7 @@ namespace DeathStar
         CentralComputerCore centralComputerCore;
         HeatExchanger heatExchanger;
         CoolingSystem coolingSystem;
-        Refinery refinery;
+        public Refinery refinery;
         FuelCollector fuelCollector;
         ExteriorQuadaniumsteelouterhull exteriorQuadaniumSteelOuterHull;
         

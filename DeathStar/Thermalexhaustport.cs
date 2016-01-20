@@ -45,7 +45,8 @@ namespace TopSecretPlans
 
         public void refresh()
         {
-            throw new NotImplementedException();
+            ClosePort();
+            OpenPort();
         }
     }
 }

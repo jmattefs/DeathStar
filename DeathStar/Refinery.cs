@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TopSecretPlans
 {
-    public class Refinery
+    public class Refinery : IActivate
     {
         public bool isOperating;
         public int RefineFuel(int RawMaterials, int FuelRequested)
@@ -18,6 +18,16 @@ namespace TopSecretPlans
         public void Exhaust(int FuelRequested)
         {
             int theFuelRequested = RefineFuel(100, 50);
+        }
+
+        public void activate()
+        {
+           
+        }
+
+        public void refresh()
+        {
+            throw new NotImplementedException();
         }
     }
 }
