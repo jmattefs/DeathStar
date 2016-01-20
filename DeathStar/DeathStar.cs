@@ -31,7 +31,7 @@ namespace DeathStar
         
         public DeathStar()
         {
-            hyperDrive = new HyperDrive("Hoth", 10, 10, true);
+            hyperDrive = new HyperDrive("Hoth", 100, 100, true);
             superLaser = new SuperLaser(100, 100, 100);
 
         }

@@ -12,9 +12,12 @@ namespace TopSecretPlans
         public int fuelCellLevel;
         public int gravityLevel;
         public bool hyperDriveExecution;
-        public HyperDrive(string destination, int fuelCellLevel, int GraveityLevel, bool hyperDriveExecution)
+        public HyperDrive(string Destination, int FuelCellLevel, int GravityLevel, bool HyperDriveExecution)
         {
-
+            destination = Destination;
+            fuelCellLevel = FuelCellLevel;
+            gravityLevel = GravityLevel;
+            hyperDriveExecution = HyperDriveExecution;
         }
         public bool IsHyperDriveExecuted()
         {
@@ -34,6 +37,7 @@ namespace TopSecretPlans
                 this.hyperDriveExecution = true;
                 this.fuelCellLevel--;
                 this.gravityLevel = 0;
+                Console.WriteLine("You have used the hyperdrive, you are now in" + destination);
             }
            else
             {
